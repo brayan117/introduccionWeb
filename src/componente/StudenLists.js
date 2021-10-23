@@ -2,6 +2,7 @@ import React from "react";
 import StudenItem from "./StudenItem";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import StudentForm from "./StudentForm";
 
 const StudenLists =()=>{
 
@@ -13,7 +14,12 @@ const StudenLists =()=>{
                 
                 ]
     return(
-        <Row className ="border">
+        <>
+        <Row>
+             <StudentForm/>
+        </Row>
+
+          <Row className ="border">
             <Col>
             
            {
@@ -24,8 +30,9 @@ const StudenLists =()=>{
             ))
 
            }
-           </Col>
-        </Row>
+             </Col>
+           </Row>
+        </>
     );
 }
 
